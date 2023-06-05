@@ -4,9 +4,11 @@ FROM jupyter/base-notebook:python-3.9
 RUN pip install -U setuptools
 # COPY  ./ ./
 # RUN pip install -r requirements.txt
-RUN pip install secml
+RUN pip install adversarial-robustness-toolbox
+RUN pip install seaborn
 
-COPY  ./ /home/jovyan/work/
+
+COPY  SVM_Final.ipynb /home/jovyan/work/
 
 RUN pip install jupyter_contrib_nbextensions
 
