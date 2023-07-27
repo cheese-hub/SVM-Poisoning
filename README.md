@@ -45,7 +45,7 @@ docker build -t <image tag of your choice> .
 Once a Docker image has been built, you can run this container using just the Docker engine:
 
 ``
-docker run -d -p 8888 <image tag from above>
+docker run -d -p 8888:8888 <image tag from above>
 ``
 
 Since the user facing interface of the container is the Jupyter notebook we expose port 8888 to be accessible on the host machine.
